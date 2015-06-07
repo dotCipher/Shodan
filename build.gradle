@@ -1,5 +1,16 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'application'
 
 mainClassName = "io.dotcipher.jtoolbox.JToolboxApplication"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.apache.httpcomponents:httpclient:$apacheClientVersion"
+    compile "com.google.guava:guava:$guavaVersion"
+    compile "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:$jacksonDataformatYamlVersion"
+}
