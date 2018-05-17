@@ -3,14 +3,15 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'application'
 
-mainClassName = "io.dotcipher.jtoolbox.JToolboxApplication"
+mainClassName = "io.dotcipher.shodan.ShodanCore"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile "org.apache.httpcomponents:httpclient:$apacheClientVersion"
+//    compile "org.apache.httpcomponents:httpclient:$apacheClientVersion"
+    compile "org.seleniumhq.selenium:selenium-java:$seleniumVersion"
     compile "com.google.guava:guava:$guavaVersion"
     compile "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:$jacksonDataformatYamlVersion"
 }
